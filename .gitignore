@@ -6,3 +6,13 @@
 # Eclipse dossiers à ignorer  #
 
 bin/
+
+# NetBeans fichiers à ignorer #
+
+build.xml
+manifest.mf
+
+# NetBeans dossiers à ignorer  #
+
+nbproject/
+build/
