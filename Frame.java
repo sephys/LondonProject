@@ -13,6 +13,7 @@ import javax.swing.*;
 /**
  *
  * @author Joke
+ * @Vue
  * Représente la fenêtre principale du jeu
  */
 public class Frame extends JFrame{
@@ -27,6 +28,7 @@ public class Frame extends JFrame{
     }
     
     public void start(){
+        
         this.setContentPane(new Plateau());
         this.setVisible(true);
     }

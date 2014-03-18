@@ -11,6 +11,7 @@ import javax.swing.*;
 /**
  *
  * @author Joke
+ * @Vue
  * Représente le panel contenant le plateau
  */
 public class Plateau extends JPanel {

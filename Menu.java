@@ -14,6 +14,8 @@ import javax.swing.*;
 /**
  *
  * @author Joke
+ * @Vue
+ * Représente la fenêtre où l'on peut choisir le nombre de joueur
  */
 public class Menu extends JPanel{
         Image image;
