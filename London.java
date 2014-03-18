@@ -20,6 +20,7 @@ public class London {
     public static void main(String[] args) {
         // TODO code application logic here
         Frame f=new Frame();
+        f.setting();
     }
     
 }

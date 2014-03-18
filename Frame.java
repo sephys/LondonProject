@@ -30,12 +30,15 @@ public class Frame extends JFrame{
     
     public void setting(){
         JPanel p=new JPanel(new BorderLayout());
-        this.add(p,BorderLayout.SOUTH);
+        
         JTextField jt=new JTextField("Nombre de joueurs : ");
         JComboBox jc=new JComboBox();
         jc.addItem("2 joueurs");
         jc.addItem("3 joueurs");
         jc.addItem("4 joueurs");
+        p.add(jt);
+        p.add(jc);
+        this.add(p,BorderLayout.SOUTH);
     }
             
     

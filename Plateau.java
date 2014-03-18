@@ -15,6 +15,9 @@ import javax.swing.*;
  */
 public class Plateau extends JPanel {
     Image image;
+    Image img;
+    
+    
     
     public Plateau(){
         this.setLayout(new BorderLayout());
