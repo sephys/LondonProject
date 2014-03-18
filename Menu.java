@@ -5,20 +5,22 @@
  */
 
 package london;
-import java.awt.*;
+
+import java.awt.BorderLayout;
+import java.awt.Graphics;
+import java.awt.Image;
 import javax.swing.*;
 
 /**
  *
  * @author Joke
- * Représente le panel contenant le plateau
  */
-public class Plateau extends JPanel {
-    Image image;
+public class Menu extends JPanel{
+        Image image;
 
-    public Plateau(){
+    public Menu(){
         this.setLayout(new BorderLayout());
-        image = getToolkit().getImage("/Users/Joke/NetBeansProjects/London/src/london/img/plateau.png");
+        image = getToolkit().getImage("/Users/Joke/NetBeansProjects/London/src/london/img/menu.png");
     }
     
     @Override
@@ -27,6 +29,4 @@ public class Plateau extends JPanel {
      g.drawImage (image, 0, 0, getWidth(),getHeight(),this);
      repaint();
    }
-    
-    
 }

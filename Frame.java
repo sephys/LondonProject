@@ -1,5 +1,7 @@
 package london;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
 /*
@@ -26,13 +28,22 @@ public class Frame extends JFrame{
     
     public void start(){
         this.setContentPane(new Plateau());
+        this.setVisible(true);
     }
     
-    public void setting(){
+    public void getMenu(){
         JPanel p=new JPanel(new BorderLayout());
-        
+        this.setContentPane(new Menu());
         JLabel jt=new JLabel("Nombre de joueurs : ");
         JButton jb=new JButton("Jouer");
+        
+        jb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                start();
+            }
+        });
+        
         JComboBox jc=new JComboBox();
         jc.addItem("2 joueurs");
         jc.addItem("3 joueurs");
