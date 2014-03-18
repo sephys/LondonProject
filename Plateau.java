@@ -15,10 +15,7 @@ import javax.swing.*;
  */
 public class Plateau extends JPanel {
     Image image;
-    Image img;
-    
-    
-    
+
     public Plateau(){
         this.setLayout(new BorderLayout());
         image = getToolkit().getImage("/Users/Joke/NetBeansProjects/London/src/london/plateau.png");

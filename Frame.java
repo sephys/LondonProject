@@ -31,14 +31,18 @@ public class Frame extends JFrame{
     public void setting(){
         JPanel p=new JPanel(new BorderLayout());
         
-        JTextField jt=new JTextField("Nombre de joueurs : ");
+        JLabel jt=new JLabel("Nombre de joueurs : ");
+        JButton jb=new JButton("Jouer");
         JComboBox jc=new JComboBox();
         jc.addItem("2 joueurs");
         jc.addItem("3 joueurs");
         jc.addItem("4 joueurs");
-        p.add(jt);
-        p.add(jc);
+        p.add(jt,BorderLayout.WEST);
+        p.add(jc,BorderLayout.CENTER);
+        p.add(jb,BorderLayout.EAST);
         this.add(p,BorderLayout.SOUTH);
+        
+        this.setVisible(true);
     }
             
     
